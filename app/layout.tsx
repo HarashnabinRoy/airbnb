@@ -6,7 +6,7 @@ import Navbar from './components/Navbar/Navbar'
 import ClientOnly from './components/ClientOnly'
 import Modal from './components/Modals/Modal'
 import RegisterModal from './components/Modals/RegisterModal'
-import ToasterProvider from './Providers/toasterProvider'
+import ToasterProvider from './Providers/ToasterProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 const font = Nunito({
