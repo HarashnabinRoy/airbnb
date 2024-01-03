@@ -7,6 +7,7 @@ import ClientOnly from './components/ClientOnly'
 import Modal from './components/Modals/Modal'
 import RegisterModal from './components/Modals/RegisterModal'
 import ToasterProvider from './Providers/ToasterProvider'
+import LoginModal from './components/Modals/LoginModal'
 
 const inter = Inter({ subsets: ['latin'] })
 const font = Nunito({
@@ -29,6 +30,7 @@ export default function RootLayout({
         <ClientOnly>
           <ToasterProvider />
           {/* <Modal actionLabel='Submit' title='Title Prop' isOpen  /> */}
+          <LoginModal />
           <RegisterModal />
           <Navbar />
         </ClientOnly>
