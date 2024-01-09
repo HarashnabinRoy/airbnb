@@ -148,7 +148,7 @@ const RentModal = () => {
                 <CountrySelect 
                     onChange={(value) => setCustomValue('location', value)}
                     value={location}
-                />
+                /> 
                 <Map 
                    center={location?.latlng} 
                 />
@@ -194,6 +194,7 @@ const RentModal = () => {
                     title='Add a photo of your place'
                     subtitle='Show your guests what your place looks like'
                 />
+                
                 <ImageUpload 
                     value={imageSrc}
                     onChange={(value) => setCustomValue('imageSrc', value)}
