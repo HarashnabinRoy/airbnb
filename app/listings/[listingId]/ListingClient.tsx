@@ -79,7 +79,7 @@ const initialDateRange = {
           router.push('/trips');
         })
         .catch(() => {
-          toast.error('Something went wrong!!');
+          toast.error('Something went wrong.');
         })
         .finally(() => {
           setIsLoading(false);
