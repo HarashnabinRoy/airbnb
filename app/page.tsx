@@ -21,6 +21,7 @@ const Home = async ({searchParams}: HomeProps) => {
       </ClientOnly>
     )
   }
+  // throw new Error("Something Went Wrong!")
 
   return (
     // <div className="p-2">Loading...</div>

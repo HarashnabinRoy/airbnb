@@ -10,6 +10,7 @@ import ToasterProvider from './Providers/ToasterProvider'
 import LoginModal from './components/Modals/LoginModal'
 import getCurrentUser from './actions/getCurrentUser'
 import RentModal from './components/Modals/RentModal'
+import SearchModal from './components/Modals/SearchModal'
 
 const inter = Inter({ subsets: ['latin'] })
 const font = Nunito({
@@ -39,6 +40,7 @@ export default async function RootLayout({
           <LoginModal />
           <RegisterModal />
           <Navbar currentUser = {currentUser} />
+          <SearchModal />
         </ClientOnly>
         <div className='pb-20 pt-28'>
           {children}
