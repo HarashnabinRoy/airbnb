@@ -1,7 +1,8 @@
 'use client'
 import React from 'react'
 import { SafeUser } from '../types';
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/Ai';
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+
 import useFavorite from '../hooks/useFavorite';
 
 interface HeartButtonProps {
