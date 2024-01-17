@@ -27,6 +27,7 @@ const ReservationsClient: React.FC<ReservationsClientProps> = ({
     axios.delete(`/api/reservations/${id}`)
     .then(() => {
       toast.success('Reservation Canceled');
+      router.refresh();
     })
     .catch(() => {
       toast.error("Something went wrong!");
