@@ -5,6 +5,8 @@ import EmptyState from "./components/EmptyState";
 import ListingCard from "./components/Listings/ListingCard";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 
+export const dynamic = 'auto';
+
 interface HomeProps {
   searchParams: IListingsParams;
 }
@@ -13,6 +15,7 @@ const Home = async ({searchParams}: HomeProps) => {
   // const isEmpty = true;
   const listings = await getListings(searchParams);
   const currentUser = await getCurrentUser();
+  
 
   if(listings.length === 0){
     return (
